@@ -8,7 +8,7 @@
 
 ## 下载
 
-- [GitHub Releases](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases)：下载 `ngb-hurricane-pc-1.0.1-win32.zip`。
+- [GitHub Releases](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases)：下载 `ngb-hurricane-pc-1.1.0-win32.zip`。
 - 百度网盘：<https://pan.baidu.com/s/1hZIwmm2hG-FY49zTiQROJw?pwd=ikwv>，提取码 `ikwv`。
 - 项目主页：<https://akirahayabusa.github.io/ngb-hurricane-patch/>
 
