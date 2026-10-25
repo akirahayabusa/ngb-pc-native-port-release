@@ -8,7 +8,7 @@ This repository only publishes the program; it holds no source code.
 
 ## Download
 
-- [GitHub Releases](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases): download `ngb-hurricane-pc-1.1.1-win32.zip`.
+- [GitHub Releases](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases): download `ngb-hurricane-pc-1.1.2-win32.zip`.
 - Baidu Netdisk: <https://pan.baidu.com/s/1hZIwmm2hG-FY49zTiQROJw?pwd=ikwv>, code `ikwv`.
 - Project site: <https://akirahayabusa.github.io/ngb-hurricane-patch/>
 
