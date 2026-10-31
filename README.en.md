@@ -8,7 +8,7 @@ This repository only publishes the program; it holds no source code.
 
 ## Download
 
-- [GitHub Releases](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases): download `ngb-hurricane-pc-1.1.11-win32.zip`.
+- [GitHub Releases](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases): download `ngb-hurricane-pc-1.1.12-win32.zip`.
 - Quark Netdisk: <https://pan.quark.cn/s/c210df004321>.
 - Project site: <https://akirahayabusa.github.io/ngb-hurricane-patch/>
 
