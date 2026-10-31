@@ -1,14 +1,19 @@
 **简体中文** | [English](README.en.md)
 
-# 忍者龙剑传 黑之章 飓风版 · PC 原生移植
+# 忍者龙剑传 黑之章 · PC 原生移植
 
-《忍者龙剑传 黑之章》飓风版中文汉化 **vb-zh-x2.1**（初代 Xbox）的非官方 Windows 原生移植。
+《忍者龙剑传 黑之章》（初代 Xbox）的非官方 Windows 原生移植。支持这四种光盘镜像：
+
+- 美版原版 NINJA GAIDEN BLACK（英文）
+- 基本版 va-zh-x2（中英）
+- 飓风版 vb-zh-x2.1（中英）
+- 飓风版 vb-jp-x2.1（日英）
 
 这个仓库只用来发布程序，不含源码。
 
 ## 下载
 
-- [GitHub Releases](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases)：下载 `ngb-hurricane-pc-1.1.12-win32.zip`。
+- [GitHub Releases](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases)：下载 `ngb-hurricane-pc-1.2.0-win32.zip`。
 - 夸克网盘：<https://pan.quark.cn/s/c210df004321>。
 - 项目主页：<https://akirahayabusa.github.io/ngb-hurricane-patch/>
 
@@ -20,7 +25,7 @@
 
 - 游戏逻辑就是原版那份代码，不会因为翻译代码产生新 bug。
 - 只需要 Direct3D 9，集成显卡也能跑满 60 帧。
-- 街机版、SFC 三部曲都能从主菜单进入。
+- 街机版（飓风版还有 SFC 三部曲）都能从主菜单进入。
 - 存档是标准 Xbox 格式，可以和 xRevive 互导。
 - 手柄：Xbox、PS3/4/5、Switch Pro、Joy-Con、DirectInput 手柄都能直接用，都带震动。
 - 可选的 Insignia 联网排行榜。
@@ -28,8 +33,10 @@
 ## 怎么玩
 
 1. 下载压缩包，解压到任意位置。
-2. 打开 `NGB-Hurricane\Ninja Gaiden Black Hurricane Launcher.exe`，在「安装」页选择你自己的 vb-zh-x2.1 镜像（`.iso`）安装。
-3. 回到「开始游戏」页开始。装好后也可以直接双击 `Ninja Gaiden Black Hurricane.exe`。
+2. 打开 `NGB-Hurricane\Ninja Gaiden Black Any Launcher.exe`，在「安装」页选择你自己的游戏镜像（`.iso`，上面四种之一）安装。
+3. 回到「开始游戏」页开始。装好后也可以直接双击 `Ninja Gaiden Black Any.exe`。
+
+从 1.1.12 或更早的版本升级：1.2.0 起程序改名为 `Ninja Gaiden Black Any.exe` / `Ninja Gaiden Black Any Launcher.exe`，覆盖解压后可以删掉旧的 `Ninja Gaiden Black Hurricane.exe` 和 `Ninja Gaiden Black Hurricane Launcher.exe`，桌面快捷方式要重新建。存档和设置不受影响。
 
 **需要**：Windows 10 / 11，支持 Direct3D 9 的显卡（集成显卡也可以），不用装任何运行库。
 
