@@ -1,6 +1,6 @@
 **简体中文** | [English](README.en.md)
 
-# 忍者龙剑传 黑之章 · PC 原生移植
+# 忍者龙剑传 黑之章 / 忍者龙剑传（2004）· PC 原生移植
 
 《忍者龙剑传 黑之章》（初代 Xbox）的非官方 Windows 原生移植。支持这四种光盘镜像：
 
@@ -9,11 +9,13 @@
 - 飓风版 vb-zh-x2.1（中英）
 - 飓风版 vb-jp-x2.1（日英）
 
+2.0.0 起也支持初代《忍者龙剑传》（2004，美版光盘）和它的飓风包：启动器左上角切换到「2004」。装上飓风包可以联网（Insignia）打忍者大师锦标赛，「NEW NOTICE!」能下载通知等内容；不想要的内容可以在启动器里卸载。
+
 这个仓库只用来发布程序，不含源码。
 
 ## 下载
 
-- [GitHub Releases](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases)：下载 `ngb-hurricane-pc-1.2.0-win32.zip`。
+- [GitHub Releases](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases)：下载 `ngb-hurricane-pc-2.0.0-win32.zip`。
 - 夸克网盘：<https://pan.quark.cn/s/c210df004321>。
 - 项目主页：<https://akirahayabusa.github.io/ngb-hurricane-patch/>
 
@@ -28,12 +30,13 @@
 - 街机版（飓风版还有 SFC 三部曲）都能从主菜单进入。
 - 存档是标准 Xbox 格式，可以和 xRevive 互导。
 - 手柄：Xbox、PS3/4/5、Switch Pro、Joy-Con、DirectInput 手柄都能直接用，都带震动。
-- 可选的 Insignia 联网排行榜。
+- 可选的 Insignia 联网排行榜；2004 的忍者大师锦标赛。
+- 存档在启动器里一键重签：别的 Xbox、xemu、别的玩家的存档都能读。
 
 ## 怎么玩
 
 1. 下载压缩包，解压到任意位置。
-2. 打开 `NGB-Hurricane\Ninja Gaiden Black Any Launcher.exe`，在「安装」页选择你自己的游戏镜像（`.iso`，上面四种之一）安装。
+2. 打开 `NGB-Hurricane\Ninja Gaiden Black Any Launcher.exe`，在「安装」页选择你自己的游戏镜像（`.iso`，上面四种之一）安装。玩 2004 先在左上角切换到「2004」，再选 2004 的镜像；飓风包在同一页下面安装。
 3. 回到「开始游戏」页开始。装好后也可以直接双击 `Ninja Gaiden Black Any.exe`。
 
 从 1.1.12 或更早的版本升级：1.2.0 起程序改名为 `Ninja Gaiden Black Any.exe` / `Ninja Gaiden Black Any Launcher.exe`，覆盖解压后可以删掉旧的 `Ninja Gaiden Black Hurricane.exe` 和 `Ninja Gaiden Black Hurricane Launcher.exe`，桌面快捷方式要重新建。存档和设置不受影响。

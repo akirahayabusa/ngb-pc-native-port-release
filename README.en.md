@@ -1,6 +1,6 @@
 [简体中文](README.md) | **English**
 
-# Ninja Gaiden Black · native PC port
+# Ninja Gaiden Black / Ninja Gaiden (2004) · native PC port
 
 An unofficial native Windows port of Ninja Gaiden Black (original Xbox). Four disc images are supported:
 
@@ -9,11 +9,13 @@ An unofficial native Windows port of Ninja Gaiden Black (original Xbox). Four di
 - the Hurricane edition vb-zh-x2.1 (Chinese / English)
 - the Hurricane edition vb-jp-x2.1 (Japanese / English)
 
+From 2.0.0 it also runs the first Ninja Gaiden (2004, the US disc) with its Hurricane Packs: switch the launcher to "2004" at the top left. With the packs, the Master Ninja Tournament plays online (Insignia) and "NEW NOTICE!" downloads notices and other content; content you do not want uninstalls in the launcher.
+
 This repository only publishes the program; it holds no source code.
 
 ## Download
 
-- [GitHub Releases](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases): download `ngb-hurricane-pc-1.2.0-win32.zip`.
+- [GitHub Releases](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases): download `ngb-hurricane-pc-2.0.0-win32.zip`.
 - Quark Netdisk: <https://pan.quark.cn/s/c210df004321>.
 - Project site: <https://akirahayabusa.github.io/ngb-hurricane-patch/>
 
@@ -28,12 +30,13 @@ The x86 code in the original `default.xbe` runs unchanged on the PC's CPU. The X
 - The arcade version (and, in the Hurricane editions, the SFC trilogy) start from the main menu.
 - Saves are in the standard Xbox format and can be exchanged with xRevive.
 - Controllers: Xbox, PS3/4/5, Switch Pro, Joy-Con and DirectInput pads work directly, all with rumble.
-- Optional Insignia online leaderboards.
+- Optional Insignia online leaderboards; 2004's Master Ninja Tournament.
+- One click in the launcher re-signs saves, so saves from another Xbox, from xemu or from another player load.
 
 ## To play
 
 1. Download the zip and extract it anywhere.
-2. Open `NGB-Hurricane\Ninja Gaiden Black Any Launcher.exe` and install your own game image (`.iso`, one of the four above) on the Install page.
+2. Open `NGB-Hurricane\Ninja Gaiden Black Any Launcher.exe` and install your own game image (`.iso`, one of the four above) on the Install page. For 2004, switch to "2004" at the top left first and choose the 2004 image; the Hurricane Packs install further down the same page.
 3. Start from the Play page. Once installed, you can also double-click `Ninja Gaiden Black Any.exe`.
 
 Upgrading from 1.1.12 or earlier: from 1.2.0 the programs are `Ninja Gaiden Black Any.exe` / `Ninja Gaiden Black Any Launcher.exe`. After extracting over the old folder you can delete the old `Ninja Gaiden Black Hurricane.exe` and `Ninja Gaiden Black Hurricane Launcher.exe`, and make desktop shortcuts again. Saves and settings are kept.
