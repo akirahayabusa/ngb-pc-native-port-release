@@ -30,7 +30,7 @@ The x86 code in the original `default.xbe` runs unchanged on the PC's CPU. The X
 - The arcade version (and, in the Hurricane editions, the SFC trilogy) start from the main menu.
 - Saves are in the standard Xbox format and can be exchanged with xRevive.
 - Controllers: Xbox, PS3/4/5, Switch Pro, Joy-Con and DirectInput pads work directly, all with rumble.
-- Optional Insignia online leaderboards; 2004's Master Ninja Tournament.
+- Optional Insignia online leaderboards; 2004's Master Ninja Tournament. From 2.2.0 no xemu is needed: make a console, register it and make a gamertag in the launcher, or import accounts from xemu.
 - One click in the launcher re-signs saves, so saves from another Xbox, from xemu or from another player load.
 
 ## To play

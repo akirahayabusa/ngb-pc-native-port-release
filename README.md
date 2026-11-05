@@ -15,7 +15,7 @@
 
 ## 下载
 
-- [GitHub Releases](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases)：下载 `ngb-hurricane-pc-2.1.3-win32.zip`。
+- [GitHub Releases](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases)：下载 `ngb-hurricane-pc-2.2.0-win32.zip`。
 - 夸克网盘：<https://pan.quark.cn/s/c210df004321>。
 - 项目主页：<https://akirahayabusa.github.io/ngb-hurricane-patch/>
 
@@ -30,7 +30,7 @@
 - 街机版（飓风版还有 SFC 三部曲）都能从主菜单进入。
 - 存档是标准 Xbox 格式，可以和 xRevive 互导。
 - 手柄：Xbox、PS3/4/5、Switch Pro、Joy-Con、DirectInput 手柄都能直接用，都带震动。
-- 可选的 Insignia 联网排行榜；2004 的忍者大师锦标赛。
+- 可选的 Insignia 联网排行榜；2004 的忍者大师锦标赛。2.2.0 起不用 xemu 也能联网：在启动器里新建主机、注册、建玩家代号，或从 xemu 导入账号。
 - 存档在启动器里一键重签：别的 Xbox、xemu、别的玩家的存档都能读。
 
 ## 怎么玩
