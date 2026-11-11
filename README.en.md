@@ -19,35 +19,53 @@ From the game's own attract demo (it plays when the title screen is left alone) 
 
 **Title screens** (16:9)
 
-| Ninja Gaiden Black, Hurricane vb-zh-x2.1 | Ninja Gaiden Black, original US release | Ninja Gaiden (2004) |
-|---|---|---|
-| ![Hurricane title](screenshots/black_title.jpg) | ![Original US title](screenshots/black_us_title.jpg) | ![2004 title](screenshots/ng04_title.jpg) |
+Ninja Gaiden Black, Hurricane vb-zh-x2.1 · Ninja Gaiden Black, original US release · Ninja Gaiden (2004)
+
+<p>
+<img src="screenshots/black_title.jpg" alt="Hurricane title" width="32.3%">
+<img src="screenshots/black_us_title.jpg" alt="Original US title" width="32.3%">
+<img src="screenshots/ng04_title.jpg" alt="2004 title" width="32.3%">
+</p>
 
 **Ninja Gaiden Black** (16:9)
 
-| | | |
-|---|---|---|
-| ![A fiend in the ruins](screenshots/black_ruins.jpg) | ![Ninpo](screenshots/black_ninpo.jpg) | ![The military base rail yard](screenshots/black_railyard.jpg) |
+<p>
+<img src="screenshots/black_ruins.jpg" alt="A fiend in the ruins" width="32.3%">
+<img src="screenshots/black_ninpo.jpg" alt="Ninpo" width="32.3%">
+<img src="screenshots/black_railyard.jpg" alt="The military base rail yard" width="32.3%">
+</p>
 
 **Screen shapes** (Ninja Gaiden Black, the same moment): 4:3, 16:9, 16:10, 21:9. At 16:10 and 21:9 the picture is wider and the HUD sits at the sides.
 
-| 4:3 | 16:9 |
-|---|---|
-| ![4:3](screenshots/black_4x3.jpg) | ![16:9](screenshots/black_16x9.jpg) |
+4:3 · 16:9
 
-| 16:10 | 21:9 |
-|---|---|
-| ![16:10](screenshots/black_16x10.jpg) | ![21:9](screenshots/black_21x9.jpg) |
+<p>
+<img src="screenshots/black_4x3.jpg" alt="4:3" width="41.6%">
+<img src="screenshots/black_16x9.jpg" alt="16:9" width="55.4%">
+</p>
+
+16:10 · 21:9
+
+<p>
+<img src="screenshots/black_16x10.jpg" alt="16:10" width="39.5%">
+<img src="screenshots/black_21x9.jpg" alt="21:9" width="57.5%">
+</p>
 
 **Ninja Gaiden (2004)**: 16:9, 4:3, 21:9 and the menu.
 
-| 16:9 | 4:3 |
-|---|---|
-| ![2004 16:9](screenshots/ng04_16x9.jpg) | ![2004 4:3](screenshots/ng04_4x3.jpg) |
+16:9 · 4:3
 
-| 21:9 | Menu |
-|---|---|
-| ![2004 21:9](screenshots/ng04_21x9.jpg) | ![2004 menu](screenshots/ng04_menu.jpg) |
+<p>
+<img src="screenshots/ng04_16x9.jpg" alt="2004 16:9" width="55.4%">
+<img src="screenshots/ng04_4x3.jpg" alt="2004 4:3" width="41.6%">
+</p>
+
+21:9 · Menu
+
+<p>
+<img src="screenshots/ng04_21x9.jpg" alt="2004 21:9" width="55.1%">
+<img src="screenshots/ng04_menu.jpg" alt="2004 menu" width="41.9%">
+</p>
 
 ## Download
 
