@@ -17,12 +17,17 @@
 
 截图来自游戏自带的待机演示（标题画面不按键时自动播放）和存档，渲染 1440 线后缩小。
 
+**标题画面**（16:9）
+
+| 黑之章 飓风版 vb-zh-x2.1 | 黑之章 美版原版 | 忍者龙剑传（2004） |
+|---|---|---|
+| ![飓风版标题](screenshots/black_title.jpg) | ![美版原版标题](screenshots/black_us_title.jpg) | ![2004 标题](screenshots/ng04_title.jpg) |
+
 **忍者龙剑传 黑之章**（16:9）
 
-| | |
-|---|---|
-| ![标题画面](screenshots/black_title.jpg) | ![遗迹中的魔神](screenshots/black_ruins.jpg) |
-| ![忍法](screenshots/black_ninpo.jpg) | ![军事基地铁路调车场](screenshots/black_railyard.jpg) |
+| | | |
+|---|---|---|
+| ![遗迹中的魔神](screenshots/black_ruins.jpg) | ![忍法](screenshots/black_ninpo.jpg) | ![军事基地铁路调车场](screenshots/black_railyard.jpg) |
 
 **不同显示比例**（黑之章，同一画面）：4:3、16:9、16:10、21:9。16:10 / 21:9 的画面加宽，血条等界面放在两侧。
 
