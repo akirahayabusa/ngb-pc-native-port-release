@@ -11,7 +11,38 @@
 
 2.0.0 起也支持初代《忍者龙剑传》（2004，美版光盘）和它的飓风包：启动器左上角切换到「2004」。装上飓风包可以联网（Insignia）打忍者大师锦标赛，「NEW NOTICE!」能下载通知等内容；不想要的内容可以在启动器里卸载。
 
-这个仓库只用来发布程序，不含源码。
+这个仓库只用来发布程序；源码（GPL-2.0）在 [ngb-pc-native-port](https://github.com/akirahayabusa/ngb-pc-native-port)。
+
+## 截图
+
+截图来自游戏自带的待机演示（标题画面不按键时自动播放）和存档，渲染 1440 线后缩小。
+
+**忍者龙剑传 黑之章**（16:9）
+
+| | |
+|---|---|
+| ![标题画面](screenshots/black_title.jpg) | ![遗迹中的魔神](screenshots/black_ruins.jpg) |
+| ![忍法](screenshots/black_ninpo.jpg) | ![军事基地铁路调车场](screenshots/black_railyard.jpg) |
+
+**不同显示比例**（黑之章，同一画面）：4:3、16:9、16:10、21:9。16:10 / 21:9 的画面加宽，血条等界面放在两侧。
+
+| 4:3 | 16:9 |
+|---|---|
+| ![4:3](screenshots/black_4x3.jpg) | ![16:9](screenshots/black_16x9.jpg) |
+
+| 16:10 | 21:9 |
+|---|---|
+| ![16:10](screenshots/black_16x10.jpg) | ![21:9](screenshots/black_21x9.jpg) |
+
+**忍者龙剑传（2004）**：16:9、4:3、21:9 与菜单。
+
+| 16:9 | 4:3 |
+|---|---|
+| ![2004 16:9](screenshots/ng04_16x9.jpg) | ![2004 4:3](screenshots/ng04_4x3.jpg) |
+
+| 21:9 | 菜单 |
+|---|---|
+| ![2004 21:9](screenshots/ng04_21x9.jpg) | ![2004 菜单](screenshots/ng04_menu.jpg) |
 
 ## 下载
 

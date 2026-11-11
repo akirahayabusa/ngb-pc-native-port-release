@@ -11,7 +11,38 @@ An unofficial native Windows port of Ninja Gaiden Black (original Xbox). Four di
 
 From 2.0.0 it also runs the first Ninja Gaiden (2004, the US disc) with its Hurricane Packs: switch the launcher to "2004" at the top left. With the packs, the Master Ninja Tournament plays online (Insignia) and "NEW NOTICE!" downloads notices and other content; content you do not want uninstalls in the launcher.
 
-This repository only publishes the program; it holds no source code.
+This repository only publishes the program; the source code (GPL-2.0) is in [ngb-pc-native-port](https://github.com/akirahayabusa/ngb-pc-native-port).
+
+## Screenshots
+
+From the game's own attract demo (it plays when the title screen is left alone) and from saves, rendered at 1440 lines and scaled down.
+
+**Ninja Gaiden Black** (16:9)
+
+| | |
+|---|---|
+| ![Title screen](screenshots/black_title.jpg) | ![A fiend in the ruins](screenshots/black_ruins.jpg) |
+| ![Ninpo](screenshots/black_ninpo.jpg) | ![The military base rail yard](screenshots/black_railyard.jpg) |
+
+**Screen shapes** (Ninja Gaiden Black, the same moment): 4:3, 16:9, 16:10, 21:9. At 16:10 and 21:9 the picture is wider and the HUD sits at the sides.
+
+| 4:3 | 16:9 |
+|---|---|
+| ![4:3](screenshots/black_4x3.jpg) | ![16:9](screenshots/black_16x9.jpg) |
+
+| 16:10 | 21:9 |
+|---|---|
+| ![16:10](screenshots/black_16x10.jpg) | ![21:9](screenshots/black_21x9.jpg) |
+
+**Ninja Gaiden (2004)**: 16:9, 4:3, 21:9 and the menu.
+
+| 16:9 | 4:3 |
+|---|---|
+| ![2004 16:9](screenshots/ng04_16x9.jpg) | ![2004 4:3](screenshots/ng04_4x3.jpg) |
+
+| 21:9 | Menu |
+|---|---|
+| ![2004 21:9](screenshots/ng04_21x9.jpg) | ![2004 menu](screenshots/ng04_menu.jpg) |
 
 ## Download
 
