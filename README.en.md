@@ -69,7 +69,7 @@ Ninja Gaiden Black, Hurricane vb-zh-x2.1 · Ninja Gaiden Black, original US rele
 
 ## Download
 
-- [GitHub Releases](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases): download `ngb-hurricane-pc-2.2.22-win32.zip`.
+- [GitHub Releases](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases): download `ngb-hurricane-pc-2.2.23-win32.zip`.
 - Quark Netdisk: <https://pan.quark.cn/s/c210df004321>.
 - Project site: <https://akirahayabusa.github.io/ngb-hurricane-patch/>
 
@@ -105,7 +105,7 @@ The full guide (settings, online play, known issues) is `README.en.md` in the zi
 
 A few anti-virus programs flag `Ninja Gaiden Black Any.exe` as a trojan. On VirusTotal it is three to five engines out of about seventy, all machine-learning or generic heuristics (such as Elastic, Malwarebytes and VBA32), none naming a malware family; Windows Defender, Kaspersky, ESET, BitDefender and the rest report it clean.
 
-It is a false positive. The game program is only a small stub holding the Xbox's memory range; at run time `blackrt.dll` puts the original game code there and patches it, and nothing is code-signed, so to these models it looks like a packed program. The full source is public: <https://github.com/akirahayabusa/ngb-pc-native-port>.
+It is a false positive. The game program is only a small stub holding the Xbox's memory range; at run time `blackrt.dll` puts the original game code there and patches it, and nothing is code-signed, so to these models it looks like a packed program. Since 2.2.23 the game program has Data Execution Prevention (DEP) on and a manifest, so it looks more like an ordinary program, though false positives may not disappear entirely. The full source is public: <https://github.com/akirahayabusa/ngb-pc-native-port>.
 
 - After downloading, check the zip against the SHA-256 in the release notes to make sure it was not swapped.
 - If it is blocked, add the game folder to your anti-virus exclusions.
