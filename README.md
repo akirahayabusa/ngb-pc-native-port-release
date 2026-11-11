@@ -101,6 +101,16 @@
 
 完整说明（设定、联网、已知问题）见压缩包里的 `README.md`。
 
+## 杀毒软件报毒
+
+少数杀毒软件会把 `Ninja Gaiden Black Any.exe` 报成木马。在 VirusTotal 上是七十家里的三五家，都是机器学习或通用启发式规则（例如 Elastic、Malwarebytes、VBA32），没有报出具体的病毒家族；Windows Defender、卡巴斯基、ESET、BitDefender 等都显示干净。
+
+这是误报。游戏程序只是一个占住 Xbox 内存地址的小程序，运行时由 `blackrt.dll` 把原版游戏代码放进这段内存并打补丁，程序也没有数字签名，在这些模型看来像加壳程序。源码全部公开：<https://github.com/akirahayabusa/ngb-pc-native-port>。
+
+- 下载后可以用发布说明里的 SHA-256 核对压缩包，确认文件没被换过。
+- 如果被拦截，把游戏文件夹加入杀毒软件的排除列表。
+- 详见 [issue #6](https://github.com/akirahayabusa/ngb-pc-native-port-release/issues/6)。
+
 ## 法律声明
 
 本项目与 Koei Tecmo、Team NINJA 及 Microsoft 无关，也未获其认可。Ninja Gaiden 是 Koei Tecmo 的商标，Xbox 是 Microsoft 的商标。

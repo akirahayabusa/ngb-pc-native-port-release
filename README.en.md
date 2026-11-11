@@ -101,6 +101,16 @@ Upgrading from 1.1.12 or earlier: from 1.2.0 the programs are `Ninja Gaiden Blac
 
 The full guide (settings, online play, known issues) is `README.en.md` in the zip.
 
+## Anti-virus warnings
+
+A few anti-virus programs flag `Ninja Gaiden Black Any.exe` as a trojan. On VirusTotal it is three to five engines out of about seventy, all machine-learning or generic heuristics (such as Elastic, Malwarebytes and VBA32), none naming a malware family; Windows Defender, Kaspersky, ESET, BitDefender and the rest report it clean.
+
+It is a false positive. The game program is only a small stub holding the Xbox's memory range; at run time `blackrt.dll` puts the original game code there and patches it, and nothing is code-signed, so to these models it looks like a packed program. The full source is public: <https://github.com/akirahayabusa/ngb-pc-native-port>.
+
+- After downloading, check the zip against the SHA-256 in the release notes to make sure it was not swapped.
+- If it is blocked, add the game folder to your anti-virus exclusions.
+- See [issue #6](https://github.com/akirahayabusa/ngb-pc-native-port-release/issues/6).
+
 ## Legal
 
 This project is not affiliated with or endorsed by Koei Tecmo, Team NINJA or Microsoft. Ninja Gaiden is a trademark of Koei Tecmo; Xbox is a trademark of Microsoft.
