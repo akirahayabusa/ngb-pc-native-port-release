@@ -95,11 +95,27 @@ The x86 code in the original `default.xbe` runs unchanged on the PC's CPU. The X
 
 Upgrading from 1.1.12 or earlier: from 1.2.0 the programs are `Ninja Gaiden Black Any.exe` / `Ninja Gaiden Black Any Launcher.exe`. After extracting over the old folder you can delete the old `Ninja Gaiden Black Hurricane.exe` and `Ninja Gaiden Black Hurricane Launcher.exe`, and make desktop shortcuts again. Saves and settings are kept.
 
-**Requires**: Windows 10 / 11 and a Direct3D 9 graphics card (integrated graphics work); nothing else to install.
+**Requires**: Windows 10 / 11 (Steam Deck / Linux: see below) and a Direct3D 9 graphics card (integrated graphics work); nothing else to install.
 
 **The game is not included**: use your own legally obtained game image.
 
 The full guide (settings, online play, known issues) is `README.en.md` in the zip.
+
+## Steam Deck / Linux
+
+There is no separate Linux build; run the Windows build through Steam's Proton.
+
+**Steam Deck**:
+
+1. In Desktop Mode, unzip the package and get your game image ready as above.
+2. Steam → Add a Game → Add a Non-Steam Game, and pick `Ninja Gaiden Black Any Launcher.exe`.
+3. Right-click it → Properties → Compatibility, tick "Force the use of a specific Steam Play compatibility tool" and pick Proton (11.0-2 is the one tried; Experimental is fine too).
+4. Start it, install or point the launcher at the game, then play. From then on it starts from the library in Game Mode.
+5. The Deck's controls are an Xbox controller under Proton. The screen is 16:10; pick "Widescreen (16:10 screens)" in the launcher's Aspect ratio.
+
+**Other Linux**: with Steam, the same as steps 2–4; without it, Lutris, Bottles or plain Wine, preferably after `winetricks dxvk` (the game uses Direct3D 9, faster through DXVK than Wine's own translation).
+
+**Where it stands**: in 1.1.x a Deck player ran it under Proton 11.0-2, and two differences between Proton and Windows were fixed (1.1.3 "dirty disc" at boot, 1.1.4 a crash after the warning screen); later versions have no Deck reports yet. The game compiles its shaders with Wine/Proton's own `d3dcompiler_47`; if parts of the picture are missing, try `winetricks d3dcompiler_47`. The launcher and online play have not been checked under Wine. If something goes wrong, post `logs\black.log` from the game folder in an issue.
 
 ## Anti-virus warnings
 

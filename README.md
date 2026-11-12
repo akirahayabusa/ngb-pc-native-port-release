@@ -95,11 +95,27 @@
 
 从 1.1.12 或更早的版本升级：1.2.0 起程序改名为 `Ninja Gaiden Black Any.exe` / `Ninja Gaiden Black Any Launcher.exe`，覆盖解压后可以删掉旧的 `Ninja Gaiden Black Hurricane.exe` 和 `Ninja Gaiden Black Hurricane Launcher.exe`，桌面快捷方式要重新建。存档和设置不受影响。
 
-**需要**：Windows 10 / 11，支持 Direct3D 9 的显卡（集成显卡也可以），不用装任何运行库。
+**需要**：Windows 10 / 11（Steam Deck / Linux 见下文），支持 Direct3D 9 的显卡（集成显卡也可以），不用装任何运行库。
 
 **不包含游戏本身**：请使用你自己合法取得的游戏镜像。
 
 完整说明（设定、联网、已知问题）见压缩包里的 `README.md`。
+
+## Steam Deck / Linux
+
+没有单独的 Linux 版，用 Steam 的 Proton 运行 Windows 版。
+
+**Steam Deck**：
+
+1. 切到桌面模式，解压压缩包，按上面的步骤准备好游戏镜像。
+2. Steam →「添加游戏」→「添加非 Steam 游戏」，选 `Ninja Gaiden Black Any Launcher.exe`。
+3. 右键这个游戏 →「属性」→「兼容性」，勾选「强制使用特定 Steam Play 兼容工具」，选 Proton（试过的是 11.0-2，也可以选 Experimental）。
+4. 启动，在启动器里安装或选好游戏路径，再开始游戏。之后在游戏模式里从库里直接启动。
+5. Deck 的按键在 Proton 里就是一个 Xbox 手柄。屏幕是 16:10，可在启动器「画面比例」里选「宽屏（16:10 显示器）」。
+
+**其他 Linux**：有 Steam 的话做法同上（第 2–4 步）；不用 Steam 时可用 Lutris、Bottles 或 Wine，建议先 `winetricks dxvk`（游戏用 Direct3D 9，经 DXVK 比 Wine 自带的转换快）。
+
+**目前的情况**：1.1.x 时有 Deck 玩家用 Proton 11.0-2 跑通过，期间修了两处 Proton 与 Windows 的差异（1.1.3 开机报光盘脏污、1.1.4 警告画面后崩溃）；之后的版本还没有 Deck 上的报告。游戏运行时用 Wine/Proton 自带的 `d3dcompiler_47` 编译着色器，如果画面缺东西，可以试 `winetricks d3dcompiler_47`。启动器界面和联网在 Wine 下没有验证过。遇到问题请把游戏文件夹里的 `logs\black.log` 发到 issue。
 
 ## 杀毒软件报毒
 
