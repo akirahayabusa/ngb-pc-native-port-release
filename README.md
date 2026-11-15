@@ -69,7 +69,7 @@
 
 ## 下载
 
-- [GitHub Releases](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases)：下载 `ngb-hurricane-pc-2.2.30-win32.zip`。
+- [GitHub Releases](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases)：下载 `ngb-hurricane-pc-2.2.31-win32.zip`。
 - 夸克网盘：<https://pan.quark.cn/s/c210df004321>。
 - 项目主页：<https://akirahayabusa.github.io/ngb-hurricane-patch/>
 
@@ -127,10 +127,28 @@
 - 如果被拦截，把游戏文件夹加入杀毒软件的排除列表。
 - 详见 [issue #6](https://github.com/akirahayabusa/ngb-pc-native-port-release/issues/6)。
 
+## 流畅度（2.2.31）
+
+2.2.31 起，第一次进入区域、第一次播过场不再卡一下：着色器、游戏的顶点程序、显卡驱动的内部程序、贴图和过场里的水波纹贴图
+都在启动时准备好（启动多等约 0.3 秒）。准备的内容来自标题画面、待机演示和作者实际游玩第 1–2 章时的记录；第 3 章以后遇到
+没准备到的东西，只会第一次卡一下。从主菜单进入游戏时约 0.6 秒的停顿是游戏自己在清理硬盘缓存，主机上也一样。
+
+每个卡顿的来源、对应的开关和实测数据，见 [2.2.31 发布说明](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases/tag/v2.2.31)
+与源码仓库 README 的「流畅度」一节。
+
 ## 法律声明
 
 本项目与 Koei Tecmo、Team NINJA 及 Microsoft 无关，也未获其认可。Ninja Gaiden 是 Koei Tecmo 的商标，Xbox 是 Microsoft 的商标。
 
 程序以 GNU 通用公共许可证第 2 版或（由你选择）任何更新的版本发布，见 `LICENSE`。
+
+## 致谢
+
+- [black-pc](https://github.com/Spark198rus/black-pc)（Spark198rus）：本项目所基于的加载器。
+- [ngbrecomp](https://github.com/gamboozino/ngbrecomp)（GPL-2.0）：忍龙主程序的 D3D 符号表；着色器种子、游戏顶点程序只发位置、
+  冷启动套用存档音量（#182）、编译预算（#94、#21，本项目默认关闭）、HUD 判断游戏中、第 2 章水面 LOD 偏移（#16）、负载计（#50、#96）
+  这些做法参照了它（按本项目的结构重新实现，没有复制代码）。逐条说明见源码仓库 README 的「致谢」。
+- [xemu](https://xemu.app)、[Cxbx-Reloaded](https://github.com/Cxbx-Reloaded/Cxbx-Reloaded)、[XbSymbolDatabase](https://github.com/Cxbx-Reloaded/XbSymbolDatabase)、
+  [genma-pc](https://github.com/w1284603830/genma-pc)、[SDL3](https://libsdl.org)。
 
 开发：哈雅布撒（b 站）

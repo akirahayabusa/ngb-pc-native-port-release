@@ -69,7 +69,7 @@ Ninja Gaiden Black, Hurricane vb-zh-x2.1 · Ninja Gaiden Black, original US rele
 
 ## Download
 
-- [GitHub Releases](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases): download `ngb-hurricane-pc-2.2.30-win32.zip`.
+- [GitHub Releases](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases): download `ngb-hurricane-pc-2.2.31-win32.zip`.
 - Quark Netdisk: <https://pan.quark.cn/s/c210df004321>.
 - Project site: <https://akirahayabusa.github.io/ngb-hurricane-patch/>
 
@@ -127,10 +127,27 @@ It is a false positive. The game program is only a small stub holding the Xbox's
 - If it is blocked, add the game folder to your anti-virus exclusions.
 - See [issue #6](https://github.com/akirahayabusa/ngb-pc-native-port-release/issues/6).
 
+## Smoothness (2.2.31)
+
+From 2.2.31 the first time an area or a cutscene shows no longer stutters: shaders, the game's vertex programs, the
+graphics driver's internal programs, textures and the cutscenes' ripple textures are prepared at start (about 0.3 s
+longer). What is prepared comes from the title, the attract demo and a recorded play of chapters 1-2 by the author;
+anything from chapter 3 on that was not prepared stutters only the first time. The pause of about 0.6 s on entering
+play from the main menu is the game tidying its hard-disk cache, as on the console.
+
+Each cause, its switch and the measurements are in the [2.2.31 release notes](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases/tag/v2.2.31)
+and the source README's Smoothness section.
+
 ## Legal
 
 This project is not affiliated with or endorsed by Koei Tecmo, Team NINJA or Microsoft. Ninja Gaiden is a trademark of Koei Tecmo; Xbox is a trademark of Microsoft.
 
 The program is licensed under the GNU General Public License, version 2 or (at your option) any later version; see `LICENSE`.
+
+## Thanks
+
+- [black-pc](https://github.com/Spark198rus/black-pc) (Spark198rus): the loader this project is built on.
+- [ngbrecomp](https://github.com/gamboozino/ngbrecomp) (GPL-2.0): the D3D symbol table of the Ninja Gaiden main program; the shader seed, the game's vertex programs shipped as their place only, the saved volumes at a cold start (#182), the compile budget (#94, #21; off by default here), the HUD's in-play test, the chapter-2 pond's LOD bias (#16) and the load meter (#50, #96) follow it (reimplemented in this project's structure, no code copied). Each is listed in the source README's Thanks.
+- [xemu](https://xemu.app), [Cxbx-Reloaded](https://github.com/Cxbx-Reloaded/Cxbx-Reloaded), [XbSymbolDatabase](https://github.com/Cxbx-Reloaded/XbSymbolDatabase), [genma-pc](https://github.com/w1284603830/genma-pc), [SDL3](https://libsdl.org).
 
 Developed by 哈雅布撒 (bilibili)
