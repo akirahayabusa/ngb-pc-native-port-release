@@ -69,7 +69,7 @@
 
 ## 下载
 
-- [GitHub Releases](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases)：下载 `ngb-hurricane-pc-2.2.31-win32.zip`。
+- [GitHub Releases](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases)：下载 `ngb-hurricane-pc-2.2.32-win32.zip`。
 - 夸克网盘：<https://pan.quark.cn/s/c210df004321>。
 - 项目主页：<https://akirahayabusa.github.io/ngb-hurricane-patch/>
 
@@ -127,13 +127,16 @@
 - 如果被拦截，把游戏文件夹加入杀毒软件的排除列表。
 - 详见 [issue #6](https://github.com/akirahayabusa/ngb-pc-native-port-release/issues/6)。
 
-## 流畅度（2.2.31）
+## 流畅度（2.2.31 起）
 
 2.2.31 起，第一次进入区域、第一次播过场不再卡一下：着色器、游戏的顶点程序、显卡驱动的内部程序、贴图和过场里的水波纹贴图
 都在启动时准备好（启动多等约 0.3 秒）。准备的内容来自标题画面、待机演示和作者实际游玩第 1–2 章时的记录；第 3 章以后遇到
 没准备到的东西，只会第一次卡一下。从主菜单进入游戏时约 0.6 秒的停顿是游戏自己在清理硬盘缓存，主机上也一样。
 
-每个卡顿的来源、对应的开关和实测数据，见 [2.2.31 发布说明](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases/tag/v2.2.31)
+2.2.32 补全了种子（作者实际游玩第 1–4 章、开 MSAA 的玩家、2004 更新补丁版），新玩家第一次启动时的最后一处固定卡顿
+（过场前的水波纹贴图）也随包解决；所有图形设置逐一实测过，开哪一种都不会现编游戏着色器。
+
+每个卡顿的来源、对应的开关和实测数据，见 [2.2.31](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases/tag/v2.2.31)、[2.2.32](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases/tag/v2.2.32) 发布说明
 与源码仓库 README 的「流畅度」一节。
 
 ## 法律声明

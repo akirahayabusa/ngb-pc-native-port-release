@@ -69,7 +69,7 @@ Ninja Gaiden Black, Hurricane vb-zh-x2.1 · Ninja Gaiden Black, original US rele
 
 ## Download
 
-- [GitHub Releases](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases): download `ngb-hurricane-pc-2.2.31-win32.zip`.
+- [GitHub Releases](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases): download `ngb-hurricane-pc-2.2.32-win32.zip`.
 - Quark Netdisk: <https://pan.quark.cn/s/c210df004321>.
 - Project site: <https://akirahayabusa.github.io/ngb-hurricane-patch/>
 
@@ -127,7 +127,7 @@ It is a false positive. The game program is only a small stub holding the Xbox's
 - If it is blocked, add the game folder to your anti-virus exclusions.
 - See [issue #6](https://github.com/akirahayabusa/ngb-pc-native-port-release/issues/6).
 
-## Smoothness (2.2.31)
+## Smoothness (from 2.2.31)
 
 From 2.2.31 the first time an area or a cutscene shows no longer stutters: shaders, the game's vertex programs, the
 graphics driver's internal programs, textures and the cutscenes' ripple textures are prepared at start (about 0.3 s
@@ -135,8 +135,12 @@ longer). What is prepared comes from the title, the attract demo and a recorded 
 anything from chapter 3 on that was not prepared stutters only the first time. The pause of about 0.6 s on entering
 play from the main menu is the game tidying its hard-disk cache, as on the console.
 
-Each cause, its switch and the measurements are in the [2.2.31 release notes](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases/tag/v2.2.31)
-and the source README's Smoothness section.
+2.2.32 completes the seeds (the author's play of chapters 1-4, players with MSAA, NG2004's title update) and ships the
+ripple textures, the last fixed spike of a new player's first start; every graphics setting was measured, none compiles a
+game shader in play.
+
+Each cause, its switch and the measurements are in the [2.2.31](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases/tag/v2.2.31) and
+[2.2.32](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases/tag/v2.2.32) release notes and the source README's Smoothness section.
 
 ## Legal
 
