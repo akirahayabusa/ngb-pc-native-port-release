@@ -69,7 +69,7 @@
 
 ## 下载
 
-- [GitHub Releases](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases)：下载 `ngb-hurricane-pc-2.2.33-win32.zip`。
+- [GitHub Releases](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases)：下载 `ngb-hurricane-pc-2.2.34-win32.zip`。
 - 夸克网盘：<https://pan.quark.cn/s/c210df004321>。
 - 项目主页：<https://akirahayabusa.github.io/ngb-hurricane-patch/>
 
@@ -140,7 +140,10 @@
 独占全屏约 18 → 8.5 ms，帧率和游戏速度不变（启动器「图形」页可以关）。种子去掉了按镜头角度重复的记录（小了一半），并加入
 作者游玩 2004 的数据。
 
-每个卡顿的来源、对应的开关和实测数据，见 [2.2.31](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases/tag/v2.2.31)、[2.2.32](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases/tag/v2.2.32)、[2.2.33](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases/tag/v2.2.33) 发布说明
+2.2.34：高刷新率屏幕用独占全屏、开垂直同步时，自动换成 60 Hz，画面不再一顿一顿（启动器「图形」页可以关）；
+独占全屏 60 Hz 时游戏节拍改为跟随屏幕的硬件 vblank，修好了过场影片变慢、卡顿的问题。
+
+每个卡顿的来源、对应的开关和实测数据，见 [2.2.31](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases/tag/v2.2.31)、[2.2.32](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases/tag/v2.2.32)、[2.2.33](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases/tag/v2.2.33)、[2.2.34](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases/tag/v2.2.34) 发布说明
 与源码仓库 README 的「流畅度」一节。
 
 ## 法律声明

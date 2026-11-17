@@ -69,7 +69,7 @@ Ninja Gaiden Black, Hurricane vb-zh-x2.1 · Ninja Gaiden Black, original US rele
 
 ## Download
 
-- [GitHub Releases](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases): download `ngb-hurricane-pc-2.2.33-win32.zip`.
+- [GitHub Releases](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases): download `ngb-hurricane-pc-2.2.34-win32.zip`.
 - Quark Netdisk: <https://pan.quark.cn/s/c210df004321>.
 - Project site: <https://akirahayabusa.github.io/ngb-hurricane-patch/>
 
@@ -144,9 +144,14 @@ game reading the pad to the picture going out, about 16 -> 2.5 ms windowed and 1
 the frame rate and game speed unchanged (the launcher's Graphics page turns it off). The seed lost its records repeated
 per camera angle (half the size) and gained the author's NG2004 play.
 
+2.2.34: on a high-refresh screen, exclusive fullscreen with V-Sync switches to 60 Hz and no longer judders (the
+launcher's Graphics page turns it off); at 60 Hz in exclusive fullscreen the game's beat follows the display's own
+vblank, which ends the cutscene movies slowing down and stuttering.
+
 Each cause, its switch and the measurements are in the [2.2.31](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases/tag/v2.2.31) and
 [2.2.32](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases/tag/v2.2.32) and
-[2.2.33](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases/tag/v2.2.33) release notes and the source README's Smoothness section.
+[2.2.33](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases/tag/v2.2.33) and
+[2.2.34](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases/tag/v2.2.34) release notes and the source README's Smoothness section.
 
 ## Legal
 
