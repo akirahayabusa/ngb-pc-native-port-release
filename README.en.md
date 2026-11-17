@@ -139,14 +139,16 @@ play from the main menu is the game tidying its hard-disk cache, as on the conso
 ripple textures, the last fixed spike of a new player's first start; every graphics setting was measured, none compiles a
 game shader in play.
 
-2.2.33 turns on the low-latency present: a picture goes out as soon as it is drawn instead of on the next beat; from the
+2.2.33 adds the low-latency present (off by default again from 2.2.34, see below): a picture goes out as soon as it is drawn instead of on the next beat; from the
 game reading the pad to the picture going out, about 16 -> 2.5 ms windowed and 18 -> 8.5 ms in exclusive fullscreen, with
 the frame rate and game speed unchanged (the launcher's Graphics page turns it off). The seed lost its records repeated
 per camera angle (half the size) and gained the author's NG2004 play.
 
 2.2.34: on a high-refresh screen, exclusive fullscreen with V-Sync switches to 60 Hz and no longer judders (the
 launcher's Graphics page turns it off); at 60 Hz in exclusive fullscreen the game's beat follows the display's own
-vblank, which ends the cutscene movies slowing down and stuttering.
+vblank, which ends the cutscene movies slowing down and stuttering. The low-latency present is off by default again
+(experimental): a player found windowed play on a 60 Hz display with integrated graphics less smooth with it on; until that
+is sorted out, turn it on only if it feels right to you.
 
 Each cause, its switch and the measurements are in the [2.2.31](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases/tag/v2.2.31) and
 [2.2.32](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases/tag/v2.2.32) and
