@@ -69,7 +69,7 @@
 
 ## 下载
 
-- [GitHub Releases](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases)：下载 `ngb-hurricane-pc-2.2.34-win32.zip`。
+- [GitHub Releases](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases)：下载 `ngb-hurricane-pc-2.2.35-win32.zip`。
 - 夸克网盘：<https://pan.quark.cn/s/c210df004321>。
 - 项目主页：<https://akirahayabusa.github.io/ngb-hurricane-patch/>
 
@@ -144,7 +144,11 @@
 独占全屏 60 Hz 时游戏节拍改为跟随屏幕的硬件 vblank，修好了过场影片变慢、卡顿的问题。低延迟呈现改回默认关闭（实验性）：
 有玩家反馈在 60 Hz 显示器、集成显卡上窗口模式不如关闭时顺，查清之前请按自己的感受决定开不开。
 
-每个卡顿的来源、对应的开关和实测数据，见 [2.2.31](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases/tag/v2.2.31)、[2.2.32](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases/tag/v2.2.32)、[2.2.33](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases/tag/v2.2.33)、[2.2.34](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases/tag/v2.2.34) 发布说明
+2.2.35：120 Hz 屏幕的窗口模式画面均匀了（以前约 45% 的帧显示时长不对）；修好偶发连续几秒“重复一帧、跳一帧”的老问题；
+可变刷新（G-SYNC / FreeSync）屏幕上独占全屏不再变慢。低延迟呈现重做并用屏幕抓取逐帧核对过：集成显卡上不再明显不顺，
+独显直接连着屏幕时推荐开启（仍默认关闭）。关闭时按键延迟与 2.2.34 相同。
+
+每个卡顿的来源、对应的开关和实测数据，见 [2.2.31](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases/tag/v2.2.31)、[2.2.32](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases/tag/v2.2.32)、[2.2.33](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases/tag/v2.2.33)、[2.2.34](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases/tag/v2.2.34)、[2.2.35](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases/tag/v2.2.35) 发布说明
 与源码仓库 README 的「流畅度」一节。
 
 ## 法律声明

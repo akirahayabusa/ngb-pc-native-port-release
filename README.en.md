@@ -69,7 +69,7 @@ Ninja Gaiden Black, Hurricane vb-zh-x2.1 · Ninja Gaiden Black, original US rele
 
 ## Download
 
-- [GitHub Releases](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases): download `ngb-hurricane-pc-2.2.34-win32.zip`.
+- [GitHub Releases](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases): download `ngb-hurricane-pc-2.2.35-win32.zip`.
 - Quark Netdisk: <https://pan.quark.cn/s/c210df004321>.
 - Project site: <https://akirahayabusa.github.io/ngb-hurricane-patch/>
 
@@ -150,10 +150,17 @@ vblank, which ends the cutscene movies slowing down and stuttering. The low-late
 (experimental): a player found windowed play on a 60 Hz display with integrated graphics less smooth with it on; until that
 is sorted out, turn it on only if it feels right to you.
 
+2.2.35: windowed on a 120 Hz screen the picture is even (about 45% of the frames stayed the wrong time before); the
+occasional few seconds of repeated and skipped frames are fixed; exclusive fullscreen no longer slows down on a
+variable-refresh (G-SYNC / FreeSync) screen. The low-latency present is redone and checked frame by frame from a screen
+capture: no longer visibly less smooth on integrated graphics, recommended with a dedicated GPU driving the screen (still
+off by default). With it off, input lag is as in 2.2.34.
+
 Each cause, its switch and the measurements are in the [2.2.31](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases/tag/v2.2.31) and
 [2.2.32](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases/tag/v2.2.32) and
 [2.2.33](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases/tag/v2.2.33) and
-[2.2.34](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases/tag/v2.2.34) release notes and the source README's Smoothness section.
+[2.2.34](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases/tag/v2.2.34) and
+[2.2.35](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases/tag/v2.2.35) release notes and the source README's Smoothness section.
 
 ## Legal
 
