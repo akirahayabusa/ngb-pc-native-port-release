@@ -69,7 +69,7 @@
 
 ## 下载
 
-- [GitHub Releases](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases)：下载 `ngb-hurricane-pc-2.2.32-win32.zip`。
+- [GitHub Releases](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases)：下载 `ngb-hurricane-pc-2.2.33-win32.zip`。
 - 夸克网盘：<https://pan.quark.cn/s/c210df004321>。
 - 项目主页：<https://akirahayabusa.github.io/ngb-hurricane-patch/>
 
@@ -136,7 +136,11 @@
 2.2.32 补全了种子（作者实际游玩第 1–4 章、开 MSAA 的玩家、2004 更新补丁版），新玩家第一次启动时的最后一处固定卡顿
 （过场前的水波纹贴图）也随包解决；所有图形设置逐一实测过，开哪一种都不会现编游戏着色器。
 
-每个卡顿的来源、对应的开关和实测数据，见 [2.2.31](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases/tag/v2.2.31)、[2.2.32](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases/tag/v2.2.32) 发布说明
+2.2.33 默认开启低延迟呈现：画面画完立刻送出，不再等下一个节拍，从游戏读到手柄到画面送出，窗口模式约 16 → 2.5 ms，
+独占全屏约 18 → 8.5 ms，帧率和游戏速度不变（启动器「图形」页可以关）。种子去掉了按镜头角度重复的记录（小了一半），并加入
+作者游玩 2004 的数据。
+
+每个卡顿的来源、对应的开关和实测数据，见 [2.2.31](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases/tag/v2.2.31)、[2.2.32](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases/tag/v2.2.32)、[2.2.33](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases/tag/v2.2.33) 发布说明
 与源码仓库 README 的「流畅度」一节。
 
 ## 法律声明
