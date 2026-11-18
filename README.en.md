@@ -69,7 +69,7 @@ Ninja Gaiden Black, Hurricane vb-zh-x2.1 · Ninja Gaiden Black, original US rele
 
 ## Download
 
-- [GitHub Releases](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases): download `ngb-hurricane-pc-2.2.36.3-win32.zip`.
+- [GitHub Releases](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases): download `ngb-hurricane-pc-2.2.37-win32.zip`.
 - Quark Netdisk: <https://pan.quark.cn/s/c210df004321>.
 - Project site: <https://akirahayabusa.github.io/ngb-hurricane-patch/>
 
@@ -90,9 +90,10 @@ The x86 code in the original `default.xbe` runs unchanged on the PC's CPU. The X
 ## To play
 
 1. Download the zip and extract it anywhere.
-2. Open `NGB-Hurricane\Ninja Gaiden Black Any Launcher.exe` and install your own game image (`.iso`, one of the four above) on the Install page. For 2004, switch to "2004" at the top left first and choose the 2004 image; the Hurricane Packs install further down the same page.
-3. Start from the Play page. Once installed, you can also double-click `Ninja Gaiden Black Any.exe`.
+2. Open `NGB-Hurricane\Ninja Gaiden Black&2004 PC Launcher.exe` and install your own game image (`.iso`, one of the four above) on the Install page. For 2004, switch to "2004" at the top left first and choose the 2004 image; the Hurricane Packs install further down the same page.
+3. Start from the Play page. Once installed, you can also double-click `Ninja Gaiden Black.exe` (Black) or `Ninja Gaiden.exe` (2004).
 
+Upgrading from 2.2.36.3 or earlier: the launcher is now `Ninja Gaiden Black&2004 PC Launcher.exe` and the game program is two, `Ninja Gaiden Black.exe` (Black) and `Ninja Gaiden.exe` (2004). After extracting over the old folder you can delete the old `Ninja Gaiden Black Any.exe` and `Ninja Gaiden Black Any Launcher.exe`; point desktop shortcuts and non-Steam games in Steam at the new launcher. Saves and settings are kept; the launcher carries the graphics preference over from the old program. Windows Firewall may ask once more for the new programs when you play online.
 Upgrading from 1.1.12 or earlier: from 1.2.0 the programs are `Ninja Gaiden Black Any.exe` / `Ninja Gaiden Black Any Launcher.exe`. After extracting over the old folder you can delete the old `Ninja Gaiden Black Hurricane.exe` and `Ninja Gaiden Black Hurricane Launcher.exe`, and make desktop shortcuts again. Saves and settings are kept.
 
 **Requires**: Windows 10 / 11 (Steam Deck / Linux: see below) and a Direct3D 9 graphics card (integrated graphics work); nothing else to install.
@@ -109,7 +110,7 @@ The full guide (settings, online play, known issues) is `README.en.md` in the zi
   do), and your own game image. Nothing else to install.
 - **Graphics card**: at the first start, if you have not set a Windows "graphics preference" for the game program, it sets
   "high performance", so a laptop with a dedicated card uses it. A preference you set is left alone.
-- **Log**: started from the launcher, `logs\black.log`; started by double-clicking `Ninja Gaiden Black Any.exe`, `black.log`
+- **Log**: started from the launcher, `logs\black.log`; started by double-clicking a game program (`Ninja Gaiden Black.exe` / `Ninja Gaiden.exe`), `black.log`
   next to it. Please attach it to a report.
 - **When the game cannot start** it says why (from 2.2.36.3): when Direct3D cannot start, for example, which step failed, what the
   error code means, the card and its driver version, and what to try - then it exits instead of crashing.
@@ -130,7 +131,7 @@ There is no separate Linux build: the Windows one runs in Wine or Proton.
 **Steam Deck**:
 
 1. In desktop mode, unpack the archive.
-2. Steam -> "Add a Game" -> "Add a Non-Steam Game", choose `Ninja Gaiden Black Any Launcher.exe`.
+2. Steam -> "Add a Game" -> "Add a Non-Steam Game", choose `Ninja Gaiden Black&2004 PC Launcher.exe`.
 3. Right-click it -> "Properties" -> "Compatibility", tick "Force the use of a specific Steam Play compatibility tool" and choose Proton (11.0-2 was tried; Experimental works too).
 4. Start it, install the game or choose its folder in the launcher, then play. Later, start it from the library in game mode.
 5. In Proton the Deck's controls are an Xbox pad. The screen is 16:10: choose "Widescreen (16:10 monitor)" under the launcher's aspect setting.
@@ -142,8 +143,8 @@ There is no separate Linux build: the Windows one runs in Wine or Proton.
    - Arch: `lib32-mesa` and `lib32-vulkan-radeon` / `lib32-vulkan-intel` / `lib32-nvidia-utils`
 
    Without them the game shows what failed and what to install, and exits (from 2.2.36.3).
-2. Run the launcher: `wine "Ninja Gaiden Black Any Launcher.exe"`, install the game, set things up and play; or run
-   `wine "Ninja Gaiden Black Any.exe"` directly. With Steam, Proton as in steps 2-4 for the Deck works too.
+2. Run the launcher: `wine "Ninja Gaiden Black&2004 PC Launcher.exe"`, install the game, set things up and play; or run
+   `wine "Ninja Gaiden Black.exe"` (Black) or `wine "Ninja Gaiden.exe"` (2004) directly. With Steam, Proton as in steps 2-4 for the Deck works too.
 3. Batocera and similar systems: try another Wine runner, or switch DXVK on or off. DXVK turns Direct3D 9 into Vulkan and is usually
    faster than Wine's own translation (not measured by the author); outside Batocera, `winetricks dxvk`.
 
@@ -165,7 +166,7 @@ There is no separate Linux build: the Windows one runs in Wine or Proton.
 
 ## Anti-virus warnings
 
-A few anti-virus programs flag `Ninja Gaiden Black Any.exe` as a trojan. On VirusTotal it is three to five engines out of about seventy, all machine-learning or generic heuristics (such as Elastic, Malwarebytes and VBA32), none naming a malware family; Windows Defender, Kaspersky, ESET, BitDefender and the rest report it clean.
+A few anti-virus programs flag the game program (`Ninja Gaiden Black Any.exe` up to 2.2.36.3, now `Ninja Gaiden Black.exe` / `Ninja Gaiden.exe`) as a trojan. On VirusTotal it is three to five engines out of about seventy, all machine-learning or generic heuristics (such as Elastic, Malwarebytes and VBA32), none naming a malware family; Windows Defender, Kaspersky, ESET, BitDefender and the rest report it clean.
 
 It is a false positive. The game program is only a small stub holding the Xbox's memory range; at run time `blackrt.dll` puts the original game code there and patches it, and nothing is code-signed, so to these models it looks like a packed program. Since 2.2.23 the game program has Data Execution Prevention (DEP) on and a manifest, so it looks more like an ordinary program, though false positives may not disappear entirely. The full source is public: <https://github.com/akirahayabusa/ngb-pc-native-port>.
 

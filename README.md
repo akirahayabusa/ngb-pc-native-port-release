@@ -69,7 +69,7 @@
 
 ## 下载
 
-- [GitHub Releases](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases)：下载 `ngb-hurricane-pc-2.2.36.3-win32.zip`。
+- [GitHub Releases](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases)：下载 `ngb-hurricane-pc-2.2.37-win32.zip`。
 - 夸克网盘：<https://pan.quark.cn/s/c210df004321>。
 - 项目主页：<https://akirahayabusa.github.io/ngb-hurricane-patch/>
 
@@ -90,9 +90,10 @@
 ## 怎么玩
 
 1. 下载压缩包，解压到任意位置。
-2. 打开 `NGB-Hurricane\Ninja Gaiden Black Any Launcher.exe`，在「安装」页选择你自己的游戏镜像（`.iso`，上面四种之一）安装。玩 2004 先在左上角切换到「2004」，再选 2004 的镜像；飓风包在同一页下面安装。
-3. 回到「开始游戏」页开始。装好后也可以直接双击 `Ninja Gaiden Black Any.exe`。
+2. 打开 `NGB-Hurricane\Ninja Gaiden Black&2004 PC Launcher.exe`，在「安装」页选择你自己的游戏镜像（`.iso`，上面四种之一）安装。玩 2004 先在左上角切换到「2004」，再选 2004 的镜像；飓风包在同一页下面安装。
+3. 回到「开始游戏」页开始。装好后也可以直接双击 `Ninja Gaiden Black.exe`（黑之章）或 `Ninja Gaiden.exe`（2004）。
 
+从 2.2.36.3 或更早的版本升级：启动器改名为 `Ninja Gaiden Black&2004 PC Launcher.exe`，游戏程序分成 `Ninja Gaiden Black.exe`（黑之章）和 `Ninja Gaiden.exe`（2004）。覆盖解压后可以删掉旧的 `Ninja Gaiden Black Any.exe` 和 `Ninja Gaiden Black Any Launcher.exe`；桌面快捷方式和 Steam 里添加的非 Steam 游戏要改成指向新的启动器。存档、设置不受影响；显卡首选项由启动器从旧程序带到新程序上。联网时 Windows 防火墙可能会为新程序再询问一次。
 从 1.1.12 或更早的版本升级：1.2.0 起程序改名为 `Ninja Gaiden Black Any.exe` / `Ninja Gaiden Black Any Launcher.exe`，覆盖解压后可以删掉旧的 `Ninja Gaiden Black Hurricane.exe` 和 `Ninja Gaiden Black Hurricane Launcher.exe`，桌面快捷方式要重新建。存档和设置不受影响。
 
 **需要**：Windows 10 / 11（Steam Deck / Linux 见下文），支持 Direct3D 9 的显卡（集成显卡也可以），不用装任何运行库。
@@ -109,7 +110,7 @@
   不需要另外安装任何运行库。
 - **显卡**：第一次运行时，如果你没有为游戏程序设过 Windows 的“图形首选项”，程序会把它设为“高性能”，有独立显卡的笔记本就用独显。
   你自己设过的不会被改。
-- **日志**：从启动器开始游戏时在 `logs\black.log`；直接双击 `Ninja Gaiden Black Any.exe` 时在它旁边的 `black.log`。
+- **日志**：从启动器开始游戏时在 `logs\black.log`；直接双击游戏程序（`Ninja Gaiden Black.exe` / `Ninja Gaiden.exe`）时在它旁边的 `black.log`。
   反馈问题时请附上。
 - **启动失败时**会弹出说明（2.2.36.3 起）：例如 Direct3D 无法启动时，写明失败在哪一步、错误码的含义、显卡和驱动版本，以及该怎么办，
   然后正常退出，不再直接崩溃。
@@ -130,7 +131,7 @@
 **Steam Deck**：
 
 1. 切到桌面模式，解压压缩包。
-2. Steam →「添加游戏」→「添加非 Steam 游戏」，选 `Ninja Gaiden Black Any Launcher.exe`。
+2. Steam →「添加游戏」→「添加非 Steam 游戏」，选 `Ninja Gaiden Black&2004 PC Launcher.exe`。
 3. 右键这个游戏 →「属性」→「兼容性」，勾选「强制使用特定 Steam Play 兼容工具」，选 Proton（试过的是 11.0-2，也可以选 Experimental）。
 4. 启动，在启动器里安装游戏或选好游戏路径，再开始游戏。之后在游戏模式里从库里直接启动。
 5. Deck 的按键在 Proton 里就是一个 Xbox 手柄。屏幕是 16:10，可在启动器「画面比例」里选「宽屏（16:10 显示器）」。
@@ -142,7 +143,7 @@
    - Arch：`lib32-mesa` 以及 `lib32-vulkan-radeon` / `lib32-vulkan-intel` / `lib32-nvidia-utils`
 
    缺少时游戏会弹出说明并退出（2.2.36.3 起），说明里写着失败原因和要装什么。
-2. 运行启动器：`wine "Ninja Gaiden Black Any Launcher.exe"`，安装游戏、调整设置后开始游戏；也可以直接运行 `wine "Ninja Gaiden Black Any.exe"`。
+2. 运行启动器：`wine "Ninja Gaiden Black&2004 PC Launcher.exe"`，安装游戏、调整设置后开始游戏；也可以直接运行 `wine "Ninja Gaiden Black.exe"`（黑之章）或 `wine "Ninja Gaiden.exe"`（2004）。
    有 Steam 的话，也可以按上面 Steam Deck 的第 2–4 步用 Proton。
 3. Batocera 等整合系统：可以换用不同的 Wine 运行器，或切换 DXVK 开关试试。DXVK 把 Direct3D 9 转成 Vulkan，通常比 Wine 自带的
    转换快（作者没有对比测过）；不用 Batocera 时可以 `winetricks dxvk`。
@@ -162,7 +163,7 @@
 
 ## 杀毒软件报毒
 
-少数杀毒软件会把 `Ninja Gaiden Black Any.exe` 报成木马。在 VirusTotal 上是七十家里的三五家，都是机器学习或通用启发式规则（例如 Elastic、Malwarebytes、VBA32），没有报出具体的病毒家族；Windows Defender、卡巴斯基、ESET、BitDefender 等都显示干净。
+少数杀毒软件会把游戏程序（2.2.36.3 及以前叫 `Ninja Gaiden Black Any.exe`，现在是 `Ninja Gaiden Black.exe` / `Ninja Gaiden.exe`）报成木马。在 VirusTotal 上是七十家里的三五家，都是机器学习或通用启发式规则（例如 Elastic、Malwarebytes、VBA32），没有报出具体的病毒家族；Windows Defender、卡巴斯基、ESET、BitDefender 等都显示干净。
 
 这是误报。游戏程序只是一个占住 Xbox 内存地址的小程序，运行时由 `blackrt.dll` 把原版游戏代码放进这段内存并打补丁，程序也没有数字签名，在这些模型看来像加壳程序。2.2.23 起游戏程序开启了数据执行保护（DEP）并带 manifest，看起来更像普通程序，但误报不保证完全消失。源码全部公开：<https://github.com/akirahayabusa/ngb-pc-native-port>。
 
