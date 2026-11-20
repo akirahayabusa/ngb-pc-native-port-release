@@ -69,7 +69,8 @@
 
 ## 下载
 
-- [GitHub Releases](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases)：下载 `ngb-hurricane-pc-2.2.37.3-win32.zip`。
+- [GitHub Releases](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases)：稳定版下载 `ngb-hurricane-pc-2.2.37.3-win32.zip`。
+- 测试版 **2.2.37.3-t**：`ngb-hurricane-pc-2.2.37.3-t-win32.zip`。只多了启动器「开始游戏」页的「稳定游戏速度」开关；CG、过场或战斗明显变快 / 变慢时打开，固定游戏时钟 59.94 Hz，不跟屏幕，也不锁帧；下次启动游戏生效。不是正式版，遇到问题请回到 2.2.37.3。
 - 夸克网盘：<https://pan.quark.cn/s/c210df004321>。
 - 项目主页：<https://akirahayabusa.github.io/ngb-hurricane-patch/>
 

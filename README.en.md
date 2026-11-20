@@ -69,7 +69,8 @@ Ninja Gaiden Black, Hurricane vb-zh-x2.1 · Ninja Gaiden Black, original US rele
 
 ## Download
 
-- [GitHub Releases](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases): download `ngb-hurricane-pc-2.2.37.1-win32.zip`.
+- [GitHub Releases](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases): stable `ngb-hurricane-pc-2.2.37.3-win32.zip`.
+- Test build **2.2.37.3-t**: `ngb-hurricane-pc-2.2.37.3-t-win32.zip`. It only adds the Start page's **Steady game speed** switch: turn it on when CG, cutscenes or combat clearly run fast or slow. The game clock stays at 59.94 Hz, not the screen; it does not cap frames, and it applies from the next start. This is not a stable release; use 2.2.37.3 if you hit a problem.
 - Quark Netdisk: <https://pan.quark.cn/s/c210df004321>.
 - Project site: <https://akirahayabusa.github.io/ngb-hurricane-patch/>
 
