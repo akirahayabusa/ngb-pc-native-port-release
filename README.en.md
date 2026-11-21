@@ -13,6 +13,10 @@ From 2.0.0 it also runs the first Ninja Gaiden (2004, the US disc) with its Hurr
 
 This repository only publishes the program; the source code (GPL-2.0) is in [ngb-pc-native-port](https://github.com/akirahayabusa/ngb-pc-native-port).
 
+> **Smoothness recommendation (measured)**  
+> **Windowed or borderless fullscreen, set the display to 60 Hz, and turn off the launcher's Steady game speed — this is the smoothest setup right now.**  
+> The game tick and the picture both follow Windows' desktop composition (DWM). If high refresh / VRR makes the game run fast or slow, turn Steady game speed on; at a high refresh rate do not turn on 60 Hz with V-Sync.
+
 ## Screenshots
 
 From the game's own attract demo (it plays when the title screen is left alone) and from saves, rendered at 1440 lines and scaled down.
