@@ -13,9 +13,18 @@ From 2.0.0 it also runs the first Ninja Gaiden (2004, the US disc) with its Hurr
 
 This repository only publishes the program; the source code (GPL-2.0) is in [ngb-pc-native-port](https://github.com/akirahayabusa/ngb-pc-native-port).
 
-> **Smoothness recommendation (measured)**  
-> **Windowed or borderless fullscreen, set the display to 60 Hz, and turn off the launcher's Steady game speed — this is the smoothest setup right now.**  
-> The game tick and the picture both follow Windows' desktop composition (DWM). If high refresh / VRR makes the game run fast or slow, turn Steady game speed on; at a high refresh rate do not turn on 60 Hz with V-Sync.
+## Smoothness settings (measured)
+
+On a 60 Hz display, two setups are recommended:
+
+| Setup | Display | Steady game speed | V-Sync | What it gives you |
+|---|---|---|---|---|
+| **A · lowest latency** | **Exclusive fullscreen** | **On** | **On** | Direct flip, no DWM; mode switch / Alt+Tab risk |
+| **B · most stable** | **Windowed / borderless** | **Off** | **On** | Follows Windows' desktop composition (DWM); no mode switch, a little more latency |
+
+- **A**: turn Low-latency present off. The tick stays at 59.94 instead of following kernel vblank down to 47; the picture flips directly and is usually smoothest at 60 Hz.
+- **B**: the tick follows DwmFlush, which is very stable in a 60 Hz window; do not turn on 60 Hz with V-Sync.
+- **High refresh / VRR**: turn Steady game speed on. Do not turn on 60 Hz with V-Sync in exclusive fullscreen; if you do switch to 60 Hz, Steady game speed must also be on, or the tick falls back to kernel vblank.
 
 ## Screenshots
 
