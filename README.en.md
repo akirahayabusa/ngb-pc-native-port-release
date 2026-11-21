@@ -19,10 +19,8 @@ The goal is a smooth experience in every setup; choose the one that matches your
 
 **High refresh display, exclusive fullscreen (recommended)**
 
-- "60 Hz with V-Sync": on
-- Steady game speed: on
-- V-Sync: on
-- Low-latency present: off
+- 120 / 240 Hz: Steady game speed on, V-Sync on, "60 Hz with V-Sync" off, Low-latency present off.
+- 144 / 165 Hz: Steady game speed on, V-Sync on, "60 Hz with V-Sync" on, Low-latency present off.
 
 **60 Hz display, exclusive fullscreen**
 
@@ -97,8 +95,7 @@ Ninja Gaiden Black, Hurricane vb-zh-x2.1 · Ninja Gaiden Black, original US rele
 
 ## Download
 
-- [GitHub Releases](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases): stable `ngb-hurricane-pc-2.2.37.3-win32.zip`.
-- Test build **2.2.37.3-t**: `ngb-hurricane-pc-2.2.37.3-t-win32.zip`. It only adds the Start page's **Steady game speed** switch: turn it on when CG, cutscenes or combat clearly run fast or slow. The game clock stays at 59.94 Hz, not the screen; it does not cap frames, and it applies from the next start. This is not a stable release; use 2.2.37.3 if you hit a problem.
+- [GitHub Releases](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases): download `ngb-hurricane-pc-2.2.37.4-win32.zip`. The zip includes Chinese / English smoothness guides.
 - Quark Netdisk: <https://pan.quark.cn/s/c210df004321>.
 - Project site: <https://akirahayabusa.github.io/ngb-hurricane-patch/>
 

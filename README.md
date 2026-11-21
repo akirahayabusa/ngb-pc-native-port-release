@@ -19,10 +19,8 @@
 
 **高刷新率显示器，真全屏（推荐）**
 
-- 「垂直同步时用 60 Hz」：开
-- 稳定游戏速度：开
-- 垂直同步：开
-- 低延迟呈现：关
+- 120 / 240 Hz：稳定游戏速度开，垂直同步开，「垂直同步时用 60 Hz」关，低延迟呈现关。
+- 144 / 165 Hz：稳定游戏速度开，垂直同步开，「垂直同步时用 60 Hz」开，低延迟呈现关。
 
 **60 Hz 显示器，真全屏**
 
@@ -97,8 +95,7 @@
 
 ## 下载
 
-- [GitHub Releases](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases)：稳定版下载 `ngb-hurricane-pc-2.2.37.3-win32.zip`。
-- 测试版 **2.2.37.3-t**：`ngb-hurricane-pc-2.2.37.3-t-win32.zip`。只多了启动器「开始游戏」页的「稳定游戏速度」开关；CG、过场或战斗明显变快 / 变慢时打开，固定游戏时钟 59.94 Hz，不跟屏幕，也不锁帧；下次启动游戏生效。不是正式版，遇到问题请回到 2.2.37.3。
+- [GitHub Releases](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases)：下载 `ngb-hurricane-pc-2.2.37.4-win32.zip`。压缩包内附中文 / 英文流畅度设置指南。
 - 夸克网盘：<https://pan.quark.cn/s/c210df004321>。
 - 项目主页：<https://akirahayabusa.github.io/ngb-hurricane-patch/>
 
