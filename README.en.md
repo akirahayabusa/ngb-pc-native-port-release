@@ -19,8 +19,19 @@ The goal is a smooth experience in every setup; choose the one that matches your
 
 **High refresh display, exclusive fullscreen**
 
-- Fixed 60 Hz: turn on "60 Hz with V-Sync" and "Steady game speed". The display switches from 120 / 144 / 165 / 240 Hz to 60 Hz. With only the 60 Hz switch on, the tick falls to 47 and a 30 fps cutscene drops to 24; the mode switch goes black for a moment, and Alt+Tab carries some risk.
-- Keep the high refresh rate: turn off "60 Hz with V-Sync" and leave "Steady game speed" on. The display stays at 120 / 144 / 165 / 240 Hz; the game still runs at 60.
+Fixed 60 Hz:
+
+- "60 Hz with V-Sync": on
+- Steady game speed: on
+- V-Sync: on
+- Low-latency present: off
+
+Keep the high refresh rate:
+
+- "60 Hz with V-Sync": off
+- Steady game speed: on
+- V-Sync: on
+- Low-latency present: off
 
 **60 Hz display, exclusive fullscreen**
 
