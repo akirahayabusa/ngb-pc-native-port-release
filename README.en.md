@@ -15,16 +15,33 @@ This repository only publishes the program; the source code (GPL-2.0) is in [ngb
 
 ## Smoothness settings (measured)
 
-On a 60 Hz display, two setups are recommended:
+On a 60 Hz display, pick one of these two setups.
 
-| Setup | Display | Steady game speed | V-Sync | What it gives you |
-|---|---|---|---|---|
-| **A · lowest latency** | **Exclusive fullscreen** | **On** | **On** | Direct flip, no DWM; mode switch / Alt+Tab risk |
-| **B · most stable** | **Windowed / borderless** | **Off** | **On** | Follows Windows' desktop composition (DWM); no mode switch, a little more latency |
+**A · lowest latency: exclusive fullscreen**
 
-- **A**: turn Low-latency present off. The tick stays at 59.94 instead of following kernel vblank down to 47; the picture flips directly and is usually smoothest at 60 Hz.
-- **B**: the tick follows DwmFlush, which is very stable in a 60 Hz window; do not turn on 60 Hz with V-Sync.
-- **High refresh / VRR**: turn Steady game speed on. Do not turn on 60 Hz with V-Sync in exclusive fullscreen; if you do switch to 60 Hz, Steady game speed must also be on, or the tick falls back to kernel vblank.
+- Display: exclusive fullscreen
+- Steady game speed: on
+- V-Sync: on
+- Low-latency present: off
+- "60 Hz with V-Sync": off (it does nothing on a 60 Hz display)
+
+The picture flips directly instead of going through DWM, usually the smoothest at 60 Hz. The cost is a black screen on mode switches and some Alt+Tab risk.
+
+**B · most stable: windowed / borderless**
+
+- Display: windowed or borderless
+- Steady game speed: off
+- V-Sync: on
+- "60 Hz with V-Sync": off
+
+The picture goes through Windows' desktop composition (DWM): no mode switch, the most stable, a little more latency than A.
+
+**High refresh / VRR displays**
+
+- Steady game speed: on
+- "60 Hz with V-Sync": keep it off
+
+If you do turn this 60 Hz switch on, Steady game speed must also be on. It switches the screen to 60 Hz first; without the fixed clock the tick follows kernel vblank, can fall to 47 and a 30 fps cutscene drops to 24. With the fixed clock it is close to setup A, but you lose the high refresh rate.
 
 ## Screenshots
 
