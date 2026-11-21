@@ -17,19 +17,10 @@ This repository only publishes the program; the source code (GPL-2.0) is in [ngb
 
 The goal is a smooth experience in every setup; choose the one that matches your display and habits.
 
-**High refresh display, exclusive fullscreen, fixed 60 Hz**
+**High refresh display, exclusive fullscreen**
 
-In exclusive fullscreen, turn on "60 Hz with V-Sync"; the display switches from 120 / 144 / 165 / 240 Hz to 60 Hz.
-
-"Steady game speed" must be on as well. With only the 60 Hz switch on, the tick follows kernel vblank after switching to 60 Hz, falls to 47, and a 30 fps cutscene drops to 24.
-
-- Display: exclusive fullscreen
-- "60 Hz with V-Sync": on
-- Steady game speed: on
-- V-Sync: on
-- Low-latency present: off
-
-The cost is losing the high refresh rate; entering the game / switching fullscreen goes black for a moment, and Alt+Tab carries some risk.
+- Fixed 60 Hz: turn on "60 Hz with V-Sync" and "Steady game speed". The display switches from 120 / 144 / 165 / 240 Hz to 60 Hz. With only the 60 Hz switch on, the tick falls to 47 and a 30 fps cutscene drops to 24; the mode switch goes black for a moment, and Alt+Tab carries some risk.
+- Keep the high refresh rate: turn off "60 Hz with V-Sync" and leave "Steady game speed" on. The display stays at 120 / 144 / 165 / 240 Hz; the game still runs at 60.
 
 **60 Hz display, exclusive fullscreen**
 
@@ -47,13 +38,6 @@ The cost is losing the high refresh rate; entering the game / switching fullscre
 - "60 Hz with V-Sync": off
 
 Windowed / borderless goes through Windows' desktop composition (DWM) and does not switch the display mode.
-
-**High refresh display, no 60 Hz switch**
-
-- Steady game speed: on
-- "60 Hz with V-Sync": off
-
-Keep the high refresh rate; the game still runs at 60.
 
 ## Screenshots
 
