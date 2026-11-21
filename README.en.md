@@ -13,15 +13,25 @@ From 2.0.0 it also runs the first Ninja Gaiden (2004, the US disc) with its Hurr
 
 This repository only publishes the program; the source code (GPL-2.0) is in [ngb-pc-native-port](https://github.com/akirahayabusa/ngb-pc-native-port).
 
-## Smoothness settings (high refresh can also switch to 60 Hz)
+## Smoothness settings
 
-> **High refresh rate and want a fixed 60 Hz? Yes, you can.**
-> **Turn on "60 Hz with V-Sync" and "Steady game speed" together.**
-> With only the 60 Hz switch on, it switches to 60 Hz and the tick falls to 47; a 30 fps cutscene drops to 24.
+The goal is a smooth experience in every setup; choose the one that matches your display and habits.
 
-On a 60 Hz display, pick one of these two setups.
+**High refresh display, exclusive fullscreen, fixed 60 Hz**
 
-**A · lowest latency: exclusive fullscreen**
+In exclusive fullscreen, turn on "60 Hz with V-Sync"; the display switches from 120 / 144 / 165 / 240 Hz to 60 Hz.
+
+"Steady game speed" must be on as well. With only the 60 Hz switch on, the tick follows kernel vblank after switching to 60 Hz, falls to 47, and a 30 fps cutscene drops to 24.
+
+- Display: exclusive fullscreen
+- "60 Hz with V-Sync": on
+- Steady game speed: on
+- V-Sync: on
+- Low-latency present: off
+
+The cost is losing the high refresh rate; entering the game / switching fullscreen goes black for a moment, and Alt+Tab carries some risk.
+
+**60 Hz display, exclusive fullscreen**
 
 - Display: exclusive fullscreen
 - Steady game speed: on
@@ -29,27 +39,21 @@ On a 60 Hz display, pick one of these two setups.
 - Low-latency present: off
 - "60 Hz with V-Sync": off (it does nothing on a 60 Hz display)
 
-The picture flips directly instead of going through DWM, usually the smoothest at 60 Hz. The cost is a black screen on mode switches and some Alt+Tab risk.
-
-**B · most stable: windowed / borderless**
+**60 Hz display, windowed / borderless**
 
 - Display: windowed or borderless
 - Steady game speed: off
 - V-Sync: on
 - "60 Hz with V-Sync": off
 
-The picture goes through Windows' desktop composition (DWM): no mode switch, the most stable, a little more latency than A.
+Windowed / borderless goes through Windows' desktop composition (DWM) and does not switch the display mode.
 
-**C · high refresh rate, fixed 60 Hz**
+**High refresh display, no 60 Hz switch**
 
-- "60 Hz with V-Sync": on
-- Steady game speed: required, on
-- V-Sync: on
-- Low-latency present: off
+- Steady game speed: on
+- "60 Hz with V-Sync": off
 
-It is close to A: the screen switches to 60 Hz and the tick stays at 59.94. The cost is losing the high refresh rate, a black screen on mode switches, and some Alt+Tab risk.
-
-If you do not want to switch to 60 Hz, on high refresh / VRR just turn Steady game speed on and leave the 60 Hz switch off.
+Keep the high refresh rate; the game still runs at 60.
 
 ## Screenshots
 
