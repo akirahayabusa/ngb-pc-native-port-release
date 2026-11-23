@@ -15,29 +15,19 @@ This repository only publishes the program; the source code (GPL-2.0) is in [ngb
 
 ## Smoothness settings
 
-The goal is a smooth experience in every setup; choose the one that matches your display and habits.
+The game's speed is right with any setting (a fixed 59.94 Hz clock; a 60 Hz monitor in a window / borderless follows the
+desktop's composition). The settings below only change how evenly frames are shown and whether the picture tears.
 
-**High refresh display, exclusive fullscreen (recommended)**
+| Monitor | Display mode | V-Sync | 60 Hz with V-Sync | Steady game speed | Low-latency present |
+|---|---|---|---|---|---|
+| G-SYNC / FreeSync on | Exclusive fullscreen | On or off | Off | Off | Off |
+| 60 Hz | Windowed / borderless | No effect | No effect | Off | Off |
+| 120 / 240 Hz | Exclusive fullscreen | On | Off | No effect | Off |
+| 144 / 165 Hz | Exclusive fullscreen | On | On | No effect | Off |
 
-- 120 / 240 Hz: Steady game speed on, V-Sync on, "60 Hz with V-Sync" off, Low-latency present off.
-- 144 / 165 Hz: Steady game speed on, V-Sync on, "60 Hz with V-Sync" on, Low-latency present off.
-
-**60 Hz display, exclusive fullscreen**
-
-- Display: exclusive fullscreen
-- Steady game speed: on
-- V-Sync: on
-- Low-latency present: off
-- "60 Hz with V-Sync": off (it does nothing on a 60 Hz display)
-
-**60 Hz display, windowed / borderless**
-
-- Display: windowed or borderless
-- Steady game speed: off
-- V-Sync: on
-- "60 Hz with V-Sync": off
-
-Windowed / borderless goes through Windows' desktop composition (DWM) and does not switch the display mode.
+Known: exclusive fullscreen with V-Sync shows one frame a refresh longer about every 17 s (about 8 s at 120 Hz, 4 s at
+240 Hz); at 120 Hz and above a window / borderless is clearly uneven: use exclusive fullscreen or set Windows' refresh rate to
+60 Hz. Details in `Smoothness-Settings-EN.md` in the package.
 
 ## Screenshots
 
@@ -95,7 +85,7 @@ Ninja Gaiden Black, Hurricane vb-zh-x2.1 · Ninja Gaiden Black, original US rele
 
 ## Download
 
-- [GitHub Releases](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases): download `ngb-hurricane-pc-2.2.37.8-win32.zip`. The zip includes Chinese / English smoothness guides.
+- [GitHub Releases](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases): download `ngb-hurricane-pc-2.2.37.9-win32.zip`. The zip includes Chinese / English smoothness guides.
 - Quark Netdisk: <https://pan.quark.cn/s/c210df004321>.
 - Project site: <https://akirahayabusa.github.io/ngb-hurricane-patch/>
 
