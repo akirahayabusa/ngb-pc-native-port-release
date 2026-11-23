@@ -83,7 +83,7 @@
 
 ## 下载
 
-- [GitHub Releases](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases)：下载 `ngb-hurricane-pc-2.2.37.10-win32.zip`。压缩包内附中文 / 英文流畅度设置指南。
+- [GitHub Releases](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases)：下载 `ngb-hurricane-pc-2.2.37.11-win32.zip`。压缩包内附中文 / 英文流畅度设置指南。
 - 夸克网盘：<https://pan.quark.cn/s/c210df004321>。
 - 项目主页：<https://akirahayabusa.github.io/ngb-hurricane-patch/>
 
@@ -217,7 +217,8 @@
 
 ## 致谢
 
-- [black-pc](https://github.com/Spark198rus/black-pc)（Spark198rus）：本项目所基于的加载器。
+- [black-pc](https://github.com/Spark198rus/black-pc)（Spark198rus）：本项目所基于的加载器，原本是《黑煞》（BLACK，
+  2006 年的射击游戏，并非《忍者龙剑传 黑之章》）的原生移植。
 - [ngbrecomp](https://github.com/gamboozino/ngbrecomp)（GPL-2.0）：忍龙主程序的 D3D 符号表；着色器种子、游戏顶点程序只发位置、
   冷启动套用存档音量（#182）、编译预算（#94、#21，本项目默认关闭）、HUD 判断游戏中、第 2 章水面 LOD 偏移（#16）、负载计（#50、#96）
   这些做法参照了它（按本项目的结构重新实现，没有复制代码）。逐条说明见源码仓库 README 的「致谢」。

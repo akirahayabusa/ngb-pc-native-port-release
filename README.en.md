@@ -85,7 +85,7 @@ Ninja Gaiden Black, Hurricane vb-zh-x2.1 · Ninja Gaiden Black, original US rele
 
 ## Download
 
-- [GitHub Releases](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases): download `ngb-hurricane-pc-2.2.37.10-win32.zip`. The zip includes Chinese / English smoothness guides.
+- [GitHub Releases](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases): download `ngb-hurricane-pc-2.2.37.11-win32.zip`. The zip includes Chinese / English smoothness guides.
 - Quark Netdisk: <https://pan.quark.cn/s/c210df004321>.
 - Project site: <https://akirahayabusa.github.io/ngb-hurricane-patch/>
 
@@ -233,7 +233,8 @@ The program is licensed under the GNU General Public License, version 2 or (at y
 
 ## Thanks
 
-- [black-pc](https://github.com/Spark198rus/black-pc) (Spark198rus): the loader this project is built on.
+- [black-pc](https://github.com/Spark198rus/black-pc) (Spark198rus): the loader this project is built on, first a
+  native port of BLACK (2006 shooter, not Ninja Gaiden Black).
 - [ngbrecomp](https://github.com/gamboozino/ngbrecomp) (GPL-2.0): the D3D symbol table of the Ninja Gaiden main program; the shader seed, the game's vertex programs shipped as their place only, the saved volumes at a cold start (#182), the compile budget (#94, #21; off by default here), the HUD's in-play test, the chapter-2 pond's LOD bias (#16) and the load meter (#50, #96) follow it (reimplemented in this project's structure, no code copied). Each is listed in the source README's Thanks.
 - [xemu](https://xemu.app), [Cxbx-Reloaded](https://github.com/Cxbx-Reloaded/Cxbx-Reloaded), [XbSymbolDatabase](https://github.com/Cxbx-Reloaded/XbSymbolDatabase), [genma-pc](https://github.com/w1284603830/genma-pc), [SDL3](https://libsdl.org).
 
