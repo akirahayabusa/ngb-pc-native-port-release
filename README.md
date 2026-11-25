@@ -49,7 +49,7 @@
 <img src="screenshots/black_railyard.jpg" alt="军事基地铁路调车场" width="32.3%">
 </p>
 
-**不同显示比例**（黑之章，同一画面）：4:3、16:9、16:10、21:9。16:10 / 21:9 的画面加宽，血条等界面放在两侧。
+**不同显示比例**（黑之章，同一画面）：4:3、16:9、16:10、21:9。21:9 的画面加宽，血条等界面放在两侧；16:10 保持 16:9 的界面布局。
 
 4:3 · 16:9
 
@@ -83,7 +83,7 @@
 
 ## 下载
 
-- [GitHub Releases](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases)：下载 `ngb-hurricane-pc-2.2.37.12-win32.zip`。压缩包内附中文 / 英文流畅度设置指南。
+- [GitHub Releases](https://github.com/akirahayabusa/ngb-pc-native-port-release/releases)：下载 `ngb-hurricane-pc-2.2.37.13-win32.zip`。压缩包内附中文 / 英文流畅度设置指南。
 - 夸克网盘：<https://pan.quark.cn/s/c210df004321>。
 - 项目主页：<https://akirahayabusa.github.io/ngb-hurricane-patch/>
 
